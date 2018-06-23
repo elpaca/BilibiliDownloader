@@ -1,8 +1,8 @@
 # BilibiliDownloader
-Use aria2c to download bilibili videos. Multi-part video supported.
+Use aria2 to download bilibili videos. Multi-part video supported.
 ## Dependency
-+ ffmpeg - used to concat segments
-+ aria2c - downloading videos
++ [ffmpeg](https://ffmpeg.org) - used to concat segments
++ [aria2](https://aria2.github.io/) - downloading videos
 ## Feature
 + Show basic information of specified video post
 + Download all parts/specified part of a video
