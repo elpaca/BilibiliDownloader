@@ -10,7 +10,8 @@ Use aria2 to download bilibili videos. Multi-part video supported.
 ## Installation
 For windows, copy "aria2c.exe" and "ffmpeg.exe" to root directory of the repository. Then create file "aria2c.conf""start_server.bat". Examples are provided below.
 ### aria2c.conf
-```enable-rpc=true
+```
+enable-rpc=true
 rpc-allow-origin-all=true
 max-connection-per-server=16
 split=256
