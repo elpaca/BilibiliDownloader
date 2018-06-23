@@ -29,3 +29,6 @@ dir=downloads
 ```bdownload.py -d av170001```
 ### Download specified part
 ```bdownload.py -d -p 1 av170001```
+
+## Known Problem
++ 拜年祭视频无法下载，因为特殊网页的原因。后续添加cid选项手动下载。

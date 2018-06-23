@@ -44,7 +44,7 @@ class Part(object):
                 time.sleep(1)
         # combine segments
         logging.info('Combining segments')
-        subprocess.call(['ffmpeg', '-f', 'concat', '-safe', '0', '-i', sequence_file, '-c', 'copy', concated_file])
+        subprocess.check_output(['ffmpeg', '-f', 'concat', '-safe', '0', '-i', sequence_file, '-c', 'copy', concated_file], stderr=subprocess.STDOUT)
         # clean up
         os.remove(sequence_file)
         for tmp in segment_flvs: os.remove(tmp)

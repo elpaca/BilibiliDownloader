@@ -38,5 +38,6 @@ if __name__ == '__main__':
             logging.info('Downloading post: %s (%d parts in total)' % (post.title, len(post.parts)))
             for p in post.parts:
                 p.download()
+            logging.info('Download finished!')
         else:
             post.parts[args.part - 1]
