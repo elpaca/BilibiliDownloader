@@ -20,8 +20,7 @@ user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, 
 dir=downloads
 ```
 ### start_server.bat
-```start aria2c --conf-path aria2c.conf
-```
+```start aria2c --conf-path aria2c.conf```
 
 ## Usage
 ### Show post information
