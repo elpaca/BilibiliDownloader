@@ -45,7 +45,7 @@ def durationToTime(duration):
     return datetime.time(hour=hrs, minute=min, second=sec)
 
 def escapeFileName(fileName):
-    return re.sub('[\/:*?"<>|]', ' ', fileName)
+    return re.sub(r'[\/:*?"<>|]', ' ', fileName)
 
 def getAria2cClientInstance():
     return PyAria2(host='localhost', port=6800)  # configure here
