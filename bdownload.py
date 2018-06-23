@@ -40,4 +40,4 @@ if __name__ == '__main__':
                 p.download()
             logging.info('Download finished!')
         else:
-            post.parts[args.part - 1]
+            post.parts[args.part - 1].download()
