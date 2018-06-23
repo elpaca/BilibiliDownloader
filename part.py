@@ -20,6 +20,8 @@ class Part(object):
         logging.info('Segments count: %d' % len(segments))
         # preparing info
         filename = '%s - %s' % (self.postTitle, self.name)
+        if self.postTitle == self.name:
+            filename = self.postTitle
         filename = utility.escapeFileName(filename)
         sequence_file = DOWNLOAD_PATH + '\\' + filename + '.txt'
         concated_file = DOWNLOAD_PATH + '\\' + filename + '.flv'
