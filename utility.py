@@ -23,7 +23,6 @@ def getVideoSegmentedLinks(cid):
     sign = hashlib.md5((params + BILIBILI_APP_SECRET).encode('utf-8')).hexdigest()
     playurl = 'https://interface.bilibili.com/v2/playurl?%s&sign=%s' % (params, sign)
 
-    print(cid)
     hds = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
         'Referer': 'https://www.bilibili.com/',
