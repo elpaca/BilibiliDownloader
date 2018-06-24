@@ -25,6 +25,7 @@ if __name__ == '__main__':
     ap.add_argument('avid', help='AVID of video to download.')
     ap.add_argument('-d', '--download', action='store_true', help='Download all parts of the video post. You should start the aria2c server manually before downloading.')
     ap.add_argument('-p', '--part', type=int, default=-1, help='Download specific part. Please input sequence number, e.g. 2 for the second part. ')
+    ap.add_argument('-c', '--cid-mode', action='store_true', help='Specify videos by cid rather than avid. Argument "avid" will be regarded as cid. You can use "," to seperate more videos.')
     args = ap.parse_args()
 
     avid = args.avid

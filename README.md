@@ -8,7 +8,7 @@ Use aria2 to download bilibili videos. Multi-part video supported.
 + Download all parts/specified part of a video
 + Automatically concat segments
 ## Installation
-For windows, copy "aria2c.exe" and "ffmpeg.exe" to root directory of the repository. Then create file "aria2c.conf""start_server.bat". Examples are provided below.
+For windows, copy "aria2c.exe" and "ffmpeg.exe" to root directory of the repository. Then create file "aria2c.conf" "start_server.bat". Run "start_server.bat" to start aria2c server. Examples are provided below.
 ### aria2c.conf
 ```
 enable-rpc=true

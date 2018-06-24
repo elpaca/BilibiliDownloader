@@ -31,11 +31,12 @@ class Part(object):
         # start downloading & make list file for combining
         with open(sequence_file, 'w+') as vlist:
             for mirrors in segments:
-                gids.append(self.client.addUri(mirrors, {'dir': DOWNLOAD_PATH}))
                 # get flv filename
                 sample = mirrors[0]
                 sample = sample[:sample.index('?')]
                 fn = os.path.basename(sample)
+                # add task
+                gids.append(self.client.addUri(mirrors, {'dir': DOWNLOAD_PATH, 'out': fn, 'auto-file-renaming': False}))
                 # write to vlist file
                 vlist.write("file '%s\\%s'\n" % (DOWNLOAD_PATH, fn))
                 segment_flvs.append('%s\\%s' % (DOWNLOAD_PATH, fn))
